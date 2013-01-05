@@ -1,6 +1,6 @@
 Streams number ranges.
 
-    var range = require('range');
+    var range = require('number-range');
 
     * range(10) - range from 0 to 9
     * range(-10, 10) - range from -10 to 9 (-10, -9, ... 0, 1, ... 9)

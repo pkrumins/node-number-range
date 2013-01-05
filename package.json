@@ -1,5 +1,5 @@
 {
-    "name" : "range",
+    "name" : "number-range",
     "version" : "0.0.1",
     "description" : "integer ranges for node",
     "main" : "index.js",
