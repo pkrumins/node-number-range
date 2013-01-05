@@ -22,7 +22,7 @@ module.exports = function () {
 
         var parts = arg.split('..');
         if (parts.length != 2)
-            throw new Error("single argument range takes 'start..' or 'start..end' or 'start,next..end'");
+            s.emit('error', "single argument range takes 'start..' or 'start..end' or 'start,next..end'");
 
         if (parts[1] == '') { // 'start..'
             var i = parts[0];
@@ -59,7 +59,7 @@ module.exports = function () {
         }
     }
     else {
-        throw new Error("range takes 1, 2 or 3 arguments");
+        s.emit('error', "range takes 1, 2 or 3 arguments");
     }
     if (infinite) {
         process.nextTick(function g () {
