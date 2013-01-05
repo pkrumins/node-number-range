@@ -63,7 +63,7 @@ module.exports = function () {
     }
     if (infinite) {
         process.nextTick(function g () {
-            s.emit('data', i++);
+            s.emit('data', String(i++));
             process.nextTick(g);
         });
     }
@@ -71,12 +71,12 @@ module.exports = function () {
         process.nextTick(function () {
             if (i < j) {
                 for (; i<j; i+=step) {
-                    s.emit('data', i)
+                    s.emit('data', String(i))
                 }
             }
             else {
                 for (; i>j; i-=step) {
-                    s.emit('data', i)
+                    s.emit('data', String(i))
                 }
             }
             s.emit('end');
