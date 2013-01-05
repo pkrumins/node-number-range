@@ -1,3 +1,7 @@
+Streams integer ranges.
+
+    var range = require('range');
+
     * range(10) - range from 0 to 9
     * range(-10, 10) - range from -10 to 9 (-10, -9, ... 0, 1, ... 9)
     * range(-10, 10, 2) - range from -10 to 8, skipping every 2nd element (-10, -8, ... 0, 2, 4, 6, 8)
@@ -15,3 +19,4 @@
     * range('(10..1]') - range from 9 to 1
     * range('(1..10)') - range from 2 to 9
     * range('[5,10..50]') - range from 5 to 50 with a step of 5 (all inclusive)
+
