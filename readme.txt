@@ -1,4 +1,4 @@
-Streams integer ranges.
+Streams number ranges.
 
     var range = require('range');
 
